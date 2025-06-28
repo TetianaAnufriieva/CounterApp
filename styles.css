@@ -34,55 +34,61 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:rgb(19, 175, 19);
+  color: rgb(19, 175, 19);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-image: url(./assets/button_img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 30px 20px 0 20px;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#result {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 50px;
   transform: translate(-50%, -50%);
-  color:rgb(0, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#result {
+
+  font-size: 40px;
+  color: rgb(0, 255, 0);
   font-weight: bold;
+  margin-top: 20px;
 }
 
 #increase_button {
-  position: fixed;
-  top: 50%;
-  left: 75%;
-  margin-top: -25px;
-  margin-left: -50px;
+  border: none;
+  box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+  margin-right: 20px;
 }
 
 #decrease_button {
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  margin-top: -25px;
-  margin-left: -50px;
+  border: none;
+  box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+  margin-left: 20px;
 }
 
 #decrease_button:active {
   transform: scale(0.9);
+  box-shadow: 0px 0px 20px 5px rgb(244, 85, 85);
 }
 
 #increase_button:active {
   transform: scale(0.9);
+  box-shadow: 0px 0px 20px 5px rgb(0, 255, 0);
 }
